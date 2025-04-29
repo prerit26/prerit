@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Your Profession/Title</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#writing">Writing</a></li>
+                    <li><a href="#code">Python Code</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Your Name" class="profile-img">
+                <div class="bio">
+                    <p>Brief professional introduction highlighting your expertise, experience, and career objectives.</p>
+                    <div class="skills">
+                        <h3>Key Skills</h3>
+                        <ul>
+                            <li>Python Programming</li>
+                            <li>Data Analysis</li>
+                            <li>Technical Writing</li>
+                            <li>Research Methodology</li>
+                            <!-- Add more skills as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" class="section">
+        <div class="container">
+            <h2>Curriculum Vitae</h2>
+            <div class="cv-container">
+                <div class="cv-download">
+                    <a href="cv.pdf" class="btn" download>Download Full CV (PDF)</a>
+                </div>
+                <div class="cv-highlights">
+                    <h3>Professional Experience</h3>
+                    <div class="timeline">
+                        <!-- Add your experience items here -->
+                        <div class="timeline-item">
+                            <h4>Job Title</h4>
+                            <p class="timeline-date">Month Year - Present</p>
+                            <p>Company Name, Location</p>
+                            <ul>
+                                <li>Key responsibility or achievement</li>
+                                <li>Another key point</li>
+                            </ul>
+                        </div>
+                        <!-- Add more items -->
+                    </div>
+                    
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <!-- Add your education items here -->
+                        <div class="timeline-item">
+                            <h4>Degree Name</h4>
+                            <p class="timeline-date">Year - Year</p>
+                            <p>Institution Name, Location</p>
+                            <p>Thesis/Dissertation Title (if applicable)</p>
+                        </div>
+                        <!-- Add more items -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="certificate-grid">
+                <!-- Certificate items -->
+                <div class="certificate-item">
+                    <div class="certificate-preview">
+                        <img src="cert1-thumb.jpg" alt="Certificate Name">
+                        <div class="certificate-overlay">
+                            <a href="cert1-thumb.jpg" class="certificate-view" target="_blank">View</a>
+                                                    </div>
+                    </div>
+                    <h3>Research Analyst Series 15</h3>
+                    <p>National Institute of Security Markets (NISM), Year</p>
+                </div>
+                <!-- Add more certificate items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section">
+        <div class="container">
+            <h2>Research Papers</h2>
+            <div class="research-grid">
+                <!-- Research paper items -->
+                <div class="research-item">
+                    <h3>Paper Title</h3>
+                    <p class="research-meta">Published in Journal Name, Year | Co-authors: Name1, Name2</p>
+                    <p class="research-abstract">Brief abstract or description of the research...</p>
+                    <div class="research-links">
+                        <a href="paper.pdf" class="btn" target="_blank">Read Paper (PDF)</a>
+                        <a href="#" class="btn">View on ResearchGate</a>
+                    </div>
+                </div>
+                <!-- Add more research items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="writing" class="section">
+        <div class="container">
+            <h2>Writing Samples</h2>
+            <div class="writing-grid">
+                <!-- Writing sample items -->
+                <div class="writing-item">
+                    <h3>Article Title</h3>
+                    <p class="writing-meta">Published in Publication Name, Year | Word Count: X,XXX</p>
+                    <p class="writing-excerpt">First paragraph or excerpt from the writing sample...</p>
+                    <a href="writing-sample.pdf" class="btn" target="_blank">Read Full Sample</a>
+                </div>
+                <!-- Add more writing samples -->
+            </div>
+        </div>
+    </section>
+
+    <section id="code" class="section">
+        <div class="container">
+            <h2>Python Code Samples</h2>
+            <div class="code-intro">
+                <p>Here are some examples of my Python projects. Visit my <a href="https://github.com/yourusername" target="_blank">GitHub profile</a> for more.</p>
+            </div>
+            <div class="code-grid">
+                <!-- Code sample items -->
+                <div class="code-item">
+                    <h3>Project Name</h3>
+                    <p class="code-description">Brief description of what the code does and its purpose.</p>
+                    <div class="code-meta">
+                        <span>Python 3.x</span>
+                        <span>Libraries: pandas, numpy, matplotlib</span>
+                    </div>
+                    <div class="code-links">
+                        <a href="project1.py" class="btn" download>Download Code</a>
+                        <a href="https://github.com/yourusername/project1" class="btn" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="code-preview">
+                        <pre><code class="language-python"># Sample code preview
+import pandas as pd
+import numpy as np
+
+def analyze_data(file_path):
+    """Function to analyze dataset"""
+    data = pd.read_csv(file_path)
+    summary = data.describe()
+    return summary</code></pre>
+                    </div>
+                </div>
+                <!-- Add more code samples -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> ee24prerit@mse.ac.in</p>
+                    
+                   
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+
+                </div>
+                          </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
