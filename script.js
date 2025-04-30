@@ -80,13 +80,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const certificateItems = document.querySelectorAll('.certificate-item');
     certificateItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
-            this.querySelector('.certificate-overlay').style.opacity = '1';
-            this.querySelector('.certificate-preview img').style.transform = 'scale(1.1)';
+            const overlay = this.querySelector('.certificate-overlay');
+            const img = this.querySelector('.certificate-preview img');
+            if (overlay) overlay.style.opacity = '1';
+            if (img) img.style.transform = 'scale(1.1)';
         });
         
         item.addEventListener('mouseleave', function() {
-            this.querySelector('.certificate-overlay').style.opacity = '0';
-            this.querySelector('.certificate-preview img').style.transform = 'scale(1)';
+            const overlay = this.querySelector('.certificate-overlay');
+            const img = this.querySelector('.certificate-preview img');
+            if (overlay) overlay.style.opacity = '0';
+            if (img) img.style.transform = 'scale(1)';
         });
     });
 });
