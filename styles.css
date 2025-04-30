@@ -464,6 +464,9 @@ code {
     transform: translateY(-3px);
 }
 
+.fa-goodreads {
+    color: #553B08;
+}
 .contact-form {
     flex: 1;
 }
