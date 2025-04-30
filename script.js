@@ -1,45 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Previous code remains the same until...
-
-    
-    // Add this new code for header hide/show on scroll
-    const header = document.querySelector('header');
-    let lastScroll = 0;
-    const scrollThreshold = 100; // How far to scroll before hiding
-    
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-        
-        // If scrolling down and past threshold, hide header
-        if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
-            header.style.transform = 'translateY(-100%)';
-            header.style.transition = 'transform 0.3s ease-out';
-        } 
-        // If scrolling up, show header
-        else if (currentScroll < lastScroll) {
-            header.style.transform = 'translateY(0)';
-        }
-        
-        lastScroll = currentScroll;
-        
-        // Keep the existing active nav update
-        updateActiveNav();
-    });
-    
-    // Rest of your existing code...
-});
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM fully loaded and parsed'); // Debug confirmation
-    
-    // 1. Set current year in footer (fixed)
-    const yearElement = document.getElementById('year');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    } else {
-        console.warn('Element with ID "year" not found');
-    }
-    
-    // 2. Smooth scrolling for anchor links (improved)
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
@@ -65,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // 3. Highlight active navigation item on scroll (optimized)
+    // Highlight active navigation item on scroll
     const sections = document.querySelectorAll('.section');
     const navItems = document.querySelectorAll('nav ul li a');
     
@@ -90,21 +50,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Initial call and scroll event listener
-    updateActiveNav();
-    window.addEventListener('scroll', updateActiveNav);
+    // Header hide/show on scroll
+    const header = document.querySelector('header');
+    let lastScroll = 0;
+    const scrollThreshold = 100; // How far to scroll before hiding
     
-    // 4. Form submission handler (if form exists)
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
+    function handleScroll() {
+        const currentScroll = window.pageYOffset;
+        
+        // If scrolling down and past threshold, hide header
+        if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
+            header.style.transform = 'translateY(-100%)';
+            header.style.transition = 'transform 0.3s ease-out';
+        } 
+        // If scrolling up, show header
+        else if (currentScroll < lastScroll) {
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScroll = currentScroll;
+        updateActiveNav();
     }
     
-    // 5. Certificate hover effect (added for better UX)
+    // Initial call and scroll event listener
+    updateActiveNav();
+    window.addEventListener('scroll', handleScroll);
+    
+    // Certificate hover effect
     const certificateItems = document.querySelectorAll('.certificate-item');
     certificateItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
