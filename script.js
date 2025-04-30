@@ -1,4 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Previous code remains the same until...
+
+    
+    // Add this new code for header hide/show on scroll
+    const header = document.querySelector('header');
+    let lastScroll = 0;
+    const scrollThreshold = 100; // How far to scroll before hiding
+    
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+        
+        // If scrolling down and past threshold, hide header
+        if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
+            header.style.transform = 'translateY(-100%)';
+            header.style.transition = 'transform 0.3s ease-out';
+        } 
+        // If scrolling up, show header
+        else if (currentScroll < lastScroll) {
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScroll = currentScroll;
+        
+        // Keep the existing active nav update
+        updateActiveNav();
+    });
+    
+    // Rest of your existing code...
+});
+document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed'); // Debug confirmation
     
     // 1. Set current year in footer (fixed)
