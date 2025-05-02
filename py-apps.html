@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ETH9D5J37"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8ETH9D5J37');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerit Bhageria | Python Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .python-projects {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .project-title {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+        
+        .python-icon {
+            color: #FFD43B;
+            font-size: 1.5rem;
+        }
+        
+        .project-content {
+            padding: 20px;
+        }
+        
+        .project-description {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-tag {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #333;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .streamlit-link {
+            background-color: #FF4B4B;
+            color: white;
+        }
+        
+        .streamlit-link:hover {
+            background-color: #e04141;
+        }
+        
+        .github-link {
+            background-color: #333;
+            color: white;
+        }
+        
+        .github-link:hover {
+            background-color: #222;
+        }
+        
+        .link-icon {
+            font-size: 1rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #2c3e50;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #3498db;
+        }
+        
+        .back-link i {
+            margin-right: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .project-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .project-link {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="container python-projects">
+            <h2>My Python Applications</h2>
+            
+            <!-- Calculator App -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Streamlit Calculator</h3>
+                    <i class="fab fa-python python-icon"></i>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        A simple yet functional calculator built with Streamlit that performs basic arithmetic operations. Made using OOPs and error handling best practices.
+                        Demonstrates how Python can be used to create interactive web applications with minimal code.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Web App</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://prerit-calculator.streamlit.app/" class="project-link streamlit-link" target="_blank">
+                            <i class="fas fa-external-link-alt link-icon"></i>
+                            Live Calculator
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+<!--
+
+  <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Stock Market Analyzer</h3>
+                    <i class="fab fa-python python-icon"></i>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        A comprehensive stock market analysis tool that visualizes historical stock data, 
+                        calculates technical indicators, and provides basic predictive analytics. 
+                        Users can compare multiple stocks and get customized reports.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">yfinance</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-streamlit-app-url-1.streamlit.app/" class="project-link streamlit-link" target="_blank">
+                            <i class="fas fa-external-link-alt link-icon"></i>
+                            Live App
+                        </a>
+                        <a href="https://github.com/yourusername/stock-analyzer" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github link-icon"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Environmental Data Dashboard</h3>
+                    <i class="fab fa-python python-icon"></i>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        An interactive dashboard that visualizes environmental indicators like air quality, 
+                        temperature changes, and carbon emissions across different regions. 
+                        Includes time-series analysis and regional comparisons.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">GeoPandas</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-streamlit-app-url-2.streamlit.app/" class="project-link streamlit-link" target="_blank">
+                            <i class="fas fa-external-link-alt link-icon"></i>
+                            Live App
+                        </a>
+                        <a href="https://github.com/yourusername/environment-dashboard" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github link-icon"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Economic Indicator Tracker</h3>
+                    <i class="fab fa-python python-icon"></i>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Tracks and visualizes key economic indicators like GDP growth, inflation rates, 
+                        and unemployment data from multiple sources. Allows users to customize time periods 
+                        and compare different economies.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Seaborn</span>
+                        <span class="tech-tag">IMF API</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-streamlit-app-url-3.streamlit.app/" class="project-link streamlit-link" target="_blank">
+                            <i class="fas fa-external-link-alt link-icon"></i>
+                            Live App
+                        </a>
+                        <a href="https://github.com/yourusername/economic-tracker" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github link-icon"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Personal Finance Manager</h3>
+                    <i class="fab fa-python python-icon"></i>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        A tool to track personal expenses, income, and investments. Provides visualizations 
+                        of spending patterns, budget adherence, and net worth over time. Supports CSV imports 
+                        from bank statements.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Altair</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-streamlit-app-url-4.streamlit.app/" class="project-link streamlit-link" target="_blank">
+                            <i class="fas fa-external-link-alt link-icon"></i>
+                            Live App
+                        </a>
+                        <a href="https://github.com/yourusername/finance-manager" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github link-icon"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+-->
+            
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Main Portfolio
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Streamlit is a Python module that helps in hosting Python applications on the web.</p>
+            <p>Built this website using AI tools—from design to launch.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
