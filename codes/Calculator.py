@@ -16,31 +16,29 @@ class Calculator:
     def isdivisible(self, number1, number2):
         return "Yes, divisible" if number1 % number2 == 0 else "No, not divisible"
 
-# Streamlit UI
+
 st.title("Simple Calculator")
 
-# Input numbers
 num1 = st.number_input("Enter first number")
 num2 = st.number_input("Enter second number")
 
-# Choose operation
 operation = st.selectbox("Select operation", ["Addition", "Subtraction", "Multiplication", "Division", "Is Divisible?"])
 
-calc = Calculator()
+abc = Calculator()
 
 try:
     if st.button("Calculate"):
         if operation == "Addition":
-            st.write("Result:", calc.addition(num1, num2))
+            st.write("Result:", abc.addition(num1, num2))
         elif operation == "Subtraction":
-            st.write("Result:", calc.subtraction(num1, num2))
+            st.write("Result:", abc.subtraction(num1, num2))
         elif operation == "Multiplication":
-            st.write("Result:", calc.multiplication(num1, num2))
+            st.write("Result:", abc.multiplication(num1, num2))
         elif operation == "Division":
-            st.write("Result:", calc.division(num1, num2))
+            st.write("Result:", abc.division(num1, num2))
         elif operation == "Is Divisible?":
-            st.write("Result:", calc.isdivisible(num1, num2))
+            st.write("Result:", abc.isdivisible(num1, num2))
 except ZeroDivisionError:
     st.error("Division by zero is not allowed.")
 except:
-    st.error("Something went wrong, enter valid values")
+    st.error("Please enter valid values")
