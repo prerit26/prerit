@@ -520,3 +520,8 @@ footer p {
     background-color: #3498db; /* Original blue color */
     border: 3px solid white;
 }
+
+.certificate-link {
+            color: #3498db;
+            text-decoration: underline;
+            margin-left: 10px;
