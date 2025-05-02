@@ -8,16 +8,12 @@ class Calculator:
         return number1 - number2
 
     def division(self, number1, number2):
-        if number2 == 0:
-            return "Error: Division by zero"
         return number1 / number2
 
     def multiplication(self, number1, number2):
         return number1 * number2
 
     def isdivisible(self, number1, number2):
-        if number2 == 0:
-            return "Cannot divide by zero"
         return "Yes, divisible" if number1 % number2 == 0 else "No, not divisible"
 
 # Streamlit UI
