@@ -32,14 +32,19 @@ operation = st.selectbox("Select operation", ["Addition", "Subtraction", "Multip
 
 calc = Calculator()
 
-if st.button("Calculate"):
-    if operation == "Addition":
-        st.write("Result:", calc.addition(num1, num2))
-    elif operation == "Subtraction":
-        st.write("Result:", calc.subtraction(num1, num2))
-    elif operation == "Multiplication":
-        st.write("Result:", calc.multiplication(num1, num2))
-    elif operation == "Division":
-        st.write("Result:", calc.division(num1, num2))
-    elif operation == "Is Divisible?":
-        st.write("Result:", calc.isdivisible(num1, num2))
+try:
+    if st.button("Calculate"):
+        if operation == "Addition":
+            st.write("Result:", calc.addition(num1, num2))
+        elif operation == "Subtraction":
+            st.write("Result:", calc.subtraction(num1, num2))
+        elif operation == "Multiplication":
+            st.write("Result:", calc.multiplication(num1, num2))
+        elif operation == "Division":
+            st.write("Result:", calc.division(num1, num2))
+        elif operation == "Is Divisible?":
+            st.write("Result:", calc.isdivisible(num1, num2))
+except ZeroDivisionError:
+    st.error("Division by zero is not allowed.")
+except:
+    st.error("Something went wrong, enter valid values")
