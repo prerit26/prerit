@@ -315,7 +315,7 @@ nav ul li a.active {
 }
 
 /* MA Environmental Economics (Education) */
-#cv .timeline:nth-of-type(1) .timeline-item:nth-child(1)::before,
+#cv .timeline:nth-of-type(1) .timeline-item:nth-child(1)::before
 
  {
     background: linear-gradient(to top, #3498db 75%, white 25%);
