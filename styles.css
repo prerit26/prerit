@@ -316,7 +316,7 @@ nav ul li a.active {
 
 /* MA Environmental Economics (Education) */
 #cv .timeline:nth-of-type(1) .timeline-item:nth-child(1)::before,
-/* Insurance Intern (Professional Experience) */
+
  {
     background: linear-gradient(to top, #3498db 75%, white 25%);
     background-color: white; /* Fallback */
