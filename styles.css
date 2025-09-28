@@ -314,12 +314,17 @@ nav ul li a.active {
     gap: 0.5rem;
 }
 
-/* Special timeline indicators for current positions */
 /* MA Environmental Economics (Education) */
-#cv .timeline:nth-of-type(1) .timeline-item:nth-child(1)::before
- {
+#cv .timeline:nth-of-type(1) .timeline-item:nth-child(1)::before {
     background: linear-gradient(to top, #3498db 75%, white 25%);
     background-color: white; /* Fallback */
+}
+
+/* Internship back to full circle */
+#cv .timeline:nth-of-type(2) .timeline-item:nth-child(1)::before {
+    background: var(--secondary-color);
+}
+
 }
 
 }
